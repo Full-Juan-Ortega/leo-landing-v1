@@ -43,15 +43,15 @@ export default function Home() {
           <nav className="hidden lg:flex items-center gap-10">
             <a href="#sistema" className="text-sm font-medium text-[#6b6b6b] hover:text-[#1a1a1a] transition-colors relative group">
               Sistema KTS
-              <span className="absolute bottom-0 left-0 w-0 h-px bg-[#e74c3c] transition-all duration-300 group-hover:w-full" />
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-yellow-500 transition-all duration-300 group-hover:w-full" />
             </a>
             <a href="#resultados" className="text-sm font-medium text-[#6b6b6b] hover:text-[#1a1a1a] transition-colors relative group">
               Resultados
-              <span className="absolute bottom-0 left-0 w-0 h-px bg-[#e74c3c] transition-all duration-300 group-hover:w-full" />
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-yellow-500 transition-all duration-300 group-hover:w-full" />
             </a>
             <a href="#blog" className="text-sm font-medium text-[#6b6b6b] hover:text-[#1a1a1a] transition-colors relative group">
               Blog
-              <span className="absolute bottom-0 left-0 w-0 h-px bg-[#e74c3c] transition-all duration-300 group-hover:w-full" />
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-yellow-500 transition-all duration-300 group-hover:w-full" />
             </a>
           </nav>
           <a
@@ -95,16 +95,18 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 lg:pt-40 lg:pb-28">
+      <section className="pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <div className="absolute top-20 -left-20 w-80 h-80 bg-yellow-400/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-10 -right-10 w-60 h-60 bg-yellow-500/15 rounded-full blur-2xl" />
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
             <div className={`lg:col-span-6 transition-all duration-700 delay-100 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <span className="inline-block text-xs font-semibold tracking-[0.2em] text-[#e74c3c] uppercase mb-4">
+              <span className="inline-block text-xs font-semibold tracking-[0.2em] text-yellow-500 uppercase mb-4">
                 Marketing para Agencias de Viajes
               </span>
               <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-medium text-[#1a1a1a] leading-[1.1] text-balance">
                 Tu agencia de viajes{" "}
-                <span className="text-[#e74c3c]">generando reservas</span> constantemente
+                <span className="text-yellow-500">generando reservas</span> constantemente
               </h1>
               <p className="mt-6 text-lg text-[#6b6b6b] leading-relaxed max-w-lg">
                 Hola, soy Kicki. Mi misión es ayudarte aplicando el sistema KTS a generar más consultas reales, capacitar a tu equipo para que venda más, y crear contenido estratégico.
@@ -126,8 +128,8 @@ export default function Home() {
             </div>
             <div className={`lg:col-span-6 transition-all duration-700 delay-300 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <div className="relative">
-                <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-[#e74c3c]/30 rounded-full" />
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#e74c3c]/10 rounded-full" />
+                <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-yellow-400/40 rounded-full" />
+                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-400/20 rounded-full" />
                 <div className="relative animate-float">
                   <Image
                     src="/brand-assets/Design/kicki/sin fondo.png"
@@ -145,10 +147,11 @@ export default function Home() {
       </section>
 
       {/* What is KTS */}
-      <section id="sistema" className="py-24 lg:py-32 bg-white">
+      <section id="sistema" className="py-24 lg:py-32 bg-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-400/5 rounded-full blur-3xl" />
         <div className="max-w-7xl mx-auto px-6">
           <div className={`text-center max-w-3xl mx-auto transition-all duration-700 delay-200 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <span className="inline-block text-xs font-semibold tracking-[0.2em] text-[#e74c3c] uppercase mb-4">
+            <span className="inline-block text-xs font-semibold tracking-[0.2em] text-yellow-500 uppercase mb-4">
               El Sistema
             </span>
             <h2 className="font-heading text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#1a1a1a]">
@@ -168,7 +171,7 @@ export default function Home() {
       <section id="resultados" className="py-24 lg:py-32 bg-[#faf8f5]">
         <div className="max-w-7xl mx-auto px-6">
           <div className={`text-center mb-16 transition-all duration-700 delay-100 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <span className="inline-block text-xs font-semibold tracking-[0.2em] text-[#e74c3c] uppercase mb-4">
+            <span className="inline-block text-xs font-semibold tracking-[0.2em] text-yellow-500 uppercase mb-4">
               Resultados
             </span>
             <h2 className="font-heading text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#1a1a1a]">
@@ -235,7 +238,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 relative">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
             <div className={`transition-all duration-700 delay-100 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <span className="inline-block text-xs font-semibold tracking-[0.2em] text-[#e74c3c] uppercase mb-4">
+              <span className="inline-block text-xs font-semibold tracking-[0.2em] text-yellow-500 uppercase mb-4">
                 El Problema
               </span>
               <h2 className="font-display text-3xl lg:text-4xl xl:text-5xl font-medium">
@@ -267,7 +270,7 @@ export default function Home() {
             </div>
             <div className={`flex justify-center transition-all duration-700 delay-300 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <div className="relative">
-                <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#e74c3c]/20 rounded-full blur-3xl" />
+                <div className="absolute -top-6 -right-6 w-32 h-32 bg-yellow-500/20 rounded-full blur-3xl" />
                 <div className="relative w-64 h-64 lg:w-80 lg:h-80">
                   <Image
                     src="/brand-assets/Design/kicki/kicki confiando.png"
@@ -286,7 +289,7 @@ export default function Home() {
       <section id="blog" className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className={`text-center mb-16 transition-all duration-700 delay-100 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <span className="inline-block text-xs font-semibold tracking-[0.2em] text-[#e74c3c] uppercase mb-4">
+            <span className="inline-block text-xs font-semibold tracking-[0.2em] text-yellow-500 uppercase mb-4">
               Blog
             </span>
             <h2 className="font-heading text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#1a1a1a]">
@@ -317,14 +320,14 @@ export default function Home() {
                 style={{ transitionDelay: `${200 + i * 100}ms` }}
               >
                 <div className="relative h-56 bg-[#faf8f5] rounded-2xl overflow-hidden">
-                  <div className="absolute inset-0 bg-[#e74c3c]/0 group-hover:bg-[#e74c3c]/10 transition-colors duration-300" />
+                  <div className="absolute inset-0 bg-yellow-500/0 group-hover:bg-yellow-500/10 transition-colors duration-300" />
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-5xl font-display text-[#1a1a1a]/10 group-hover:text-[#e74c3c]/30 transition-colors duration-300">
+                    <span className="text-5xl font-display text-[#1a1a1a]/10 group-hover:text-yellow-500/30 transition-colors duration-300">
                       {String(i + 1).padStart(2, '0')}
                     </span>
                   </div>
                 </div>
-                <h3 className="mt-5 text-lg font-semibold text-[#1a1a1a] group-hover:text-[#e74c3c] transition-colors">
+                <h3 className="mt-5 text-lg font-semibold text-[#1a1a1a] group-hover:text-yellow-500 transition-colors">
                   {post.title}
                 </h3>
                 <p className="mt-2 text-[#6b6b6b]">{post.desc}</p>
@@ -338,7 +341,7 @@ export default function Home() {
       <section className="py-24 lg:py-32 bg-[#faf8f5]">
         <div className="max-w-7xl mx-auto px-6">
           <div className={`text-center mb-16 transition-all duration-700 delay-100 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <span className="inline-block text-xs font-semibold tracking-[0.2em] text-[#e74c3c] uppercase mb-4">
+            <span className="inline-block text-xs font-semibold tracking-[0.2em] text-yellow-500 uppercase mb-4">
               Testimonios
             </span>
             <h2 className="font-heading text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#1a1a1a]">
@@ -370,8 +373,8 @@ export default function Home() {
               >
                 <p className="text-[#6b6b6b] italic leading-relaxed">"{testimonial.text}"</p>
                 <div className="mt-6 flex items-center gap-4">
-                  <div className="w-12 h-12 bg-[#e74c3c]/10 rounded-full flex items-center justify-center">
-                    <span className="text-[#e74c3c] font-heading font-semibold">
+                  <div className="w-12 h-12 bg-yellow-500/10 rounded-full flex items-center justify-center">
+                    <span className="text-yellow-500 font-heading font-semibold">
                       {testimonial.name[0]}
                     </span>
                   </div>
@@ -390,7 +393,7 @@ export default function Home() {
       <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <div className={`transition-all duration-700 delay-100 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <span className="inline-block text-xs font-semibold tracking-[0.2em] text-[#e74c3c] uppercase mb-4">
+            <span className="inline-block text-xs font-semibold tracking-[0.2em] text-yellow-500 uppercase mb-4">
               Newsletter
             </span>
             <h2 className="font-heading text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#1a1a1a]">
@@ -405,7 +408,7 @@ export default function Home() {
                 placeholder="Tu email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="px-6 py-4 rounded-full border border-gray-200 w-full sm:w-80 focus:outline-none focus:border-[#e74c3c] focus:ring-2 focus:ring-[#e74c3c]/20 transition-all"
+                className="px-6 py-4 rounded-full border border-gray-200 w-full sm:w-80 focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20 transition-all"
                 required
               />
               <button
@@ -445,7 +448,7 @@ export default function Home() {
               <p className="text-white/60">Teléfono: +549 351 3183324</p>
               <p className="text-white/60">Email: leo@kickstartmarketing.com</p>
               <div className="mt-5 flex gap-5 justify-center lg:justify-end">
-                <a href={INSTAGRAM} target="_blank" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#e74c3c] transition-colors">
+                <a href={INSTAGRAM} target="_blank" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-yellow-500 transition-colors">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
                   </svg>
